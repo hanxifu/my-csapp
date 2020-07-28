@@ -59,7 +59,7 @@ void test_2_6()
 void test_2_7()
 {
     const char *s = "abcdef";
-    show_bytes((byte_pointer) s, strlen(s));
+    show_bytes((byte_pointer)s, strlen(s));
 }
 
 int main()
