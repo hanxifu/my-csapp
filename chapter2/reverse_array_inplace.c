@@ -11,25 +11,28 @@ void reverse_array(int a[], int cnt)
 {
     int first, last;
     for (first = 0, last = cnt - 1;
-         first <= last;
-         first++, last--)
+            first <= last;
+            first++, last--) {
         inplace_swap(&a[first], &a[last]);
+    }
 }
 
 void reverse_array_modified(int a[], int cnt)
 {
     int first, last;
     for (first = 0, last = cnt - 1;
-         first < last;
-         first++, last--)
+            first < last;
+            first++, last--) {
         inplace_swap(&a[first], &a[last]);
+    }
 }
 
 void print_array(int a[], int cnt)
 {
     int i;
-    for (i = 0; i < cnt - 1; i++)
+    for (i = 0; i < cnt - 1; i++) {
         printf("%d, ", a[i]);
+    }
     printf("%d\n", a[i]);
 }
 
